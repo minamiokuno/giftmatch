@@ -2,7 +2,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = secret_keys.OpenAIAPI.openai_api_key
+openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 
 # ユーザーインターフェイスの構築
 st.title("GiftMatch")
